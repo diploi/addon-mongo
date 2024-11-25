@@ -24,4 +24,4 @@ logs:
 
 storage:
   - identifier: mongo
-    sizeMiB: 27017
+    sizeMiB: 5120
