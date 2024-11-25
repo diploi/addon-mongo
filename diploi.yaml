@@ -1,0 +1,27 @@
+diploiVersion: v1.0
+type: addon
+name: MongoDB
+description: Official MongoDB addon for Diploi.
+
+parameterGroups:
+  - name: Credentials
+    identifier: credentials
+    description: Adjust the initial credentials of the MongoDB instance. Changing these values after the deployment has been started once will have no effect.
+    parameters:
+      - name: Root User Username
+        identifier: MONGO_INITDB_ROOT_USERNAME
+        defaultValue: root
+        type: string
+      - name: Root User Password
+        identifier: MONGO_INITDB_ROOT_PASSWORD
+        defaultValue: example
+        type: secret
+
+logs:
+  - name: MongoDB Log
+    type: log
+    labelSelector: app=mongo
+
+storage:
+  - identifier: mongo
+    sizeMiB: 27017
