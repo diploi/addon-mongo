@@ -27,6 +27,10 @@ logs:
     type: log
     labelSelector: app=mongo
 
+images:
+  - identifier: mongo
+    image: mongo:8.0.4-noble
+
 storage:
   - identifier: mongo
     sizeMiB: 5120
