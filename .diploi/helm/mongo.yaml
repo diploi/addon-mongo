@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: mongo
-          image: mongo:8.0.3-noble
+          image: {{ .Values.images.mongo }}
           imagePullPolicy: Always
           ports:
             - containerPort: 27017
