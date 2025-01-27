@@ -17,6 +17,11 @@ parameterGroups:
         defaultValue: example
         type: secret
 
+connectionStrings:
+  - name: Connection URI
+    value: mongodb://${MONGO_INITDB_ROOT_USERNAME}:${MONGO_INITDB_ROOT_PASSWORD}@${DIPLOI_NAMESPACE}
+    description: This connection URI is for components within the deployment and is inaccessible externally.
+
 logs:
   - name: MongoDB Log
     type: log
