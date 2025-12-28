@@ -15,7 +15,7 @@ logs:
 
 images:
   - identifier: mongo
-    image: mongo:8.0.4-noble
+    image: mongo:8.2.3-noble
 
 storage:
   - identifier: mongo
