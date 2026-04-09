@@ -3,6 +3,16 @@ type: addon
 name: MongoDB
 description: Official MongoDB addon for Diploi.
 
+parameterGroups:
+  - name: Connection
+    identifier: mongo
+    description: Connection configuration
+    parameters:
+      - name: Database_url
+        identifier: DATABASE_URL
+        defaultValue: mongodb://mongo.${DIPLOI_NAMESPACE}
+        type: string
+
 connectionStrings:
   - name: Connection URI
     value: mongodb://mongo.${DIPLOI_NAMESPACE}
